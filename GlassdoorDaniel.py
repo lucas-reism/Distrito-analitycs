@@ -22,4 +22,4 @@ class GlassDoorSpider(scrapy.Spider):
         yield Request('https://www.glassdoor.com.br' + pages_url, callback=self.parse)
 
 
- #response.xpath('.//span[@class = "bigRating strong margRtSm h2"]/text()').getall()
+#scrapy runspider GlassdoorLucas.py -s HTTPCACHE_ENABLE=1 -o glass.csv
